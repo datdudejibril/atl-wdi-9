@@ -8,31 +8,46 @@
 // For each expression below, indicate whether it is 'truthy' or 'falsey'
 // by assigning the appropriate variable a value of either `true` or `false`.
 
-// 1. true || false 
+// 1. true || false
 //var resOne = true;
 var resOne;
+
+resOne = true
 
 // 2. null || ''
 //var resTwo = falsey;
 var resTwo;
 
+resTwo = false
+
 // 3. 'false' && true
 //var resThree = true;
 var resThree;
+
+resThree = false
 
 // 4. !!0
 //var resFour = false;
 var resFour;
 
+resFour = false
+
 // 5. !null && !undefined
 //var resFive = true;
 var resFive;
+
+resFive = true
 
 /// Flow Control ///
 
 // 6. Write a `while` loop that increases `resSix` by 23 until `resSix` is five
 //    digits long. (Hint: take a look at the .toString() method)
 var resSix = 5;
+
+while (var resSix = 0; resSix <  )
+
+
+
 console.log(resSix.toString().length);
 
 while (resSix.toString().length < 5){
@@ -62,6 +77,15 @@ resSeven+=12
 //    calculates the sum of all of those numbers, storing the result in the
 //    variable `resEight`.
 var resEight;
+
+for (i = 0; 0 < 1857; i++) {
+
+var resEight += i
+
+
+}
+
+
 // Replace This Comment With Your Code
 
 // 9. Using a `for` loop, calculate the sum of all multiples of 7 between 0
