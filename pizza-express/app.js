@@ -14,28 +14,18 @@ app.set('views', './views');
 
 app.get('/topping/:type', function(req, res, next) {
     console.log(req.params);
-    res.send(`${req.params.type}!, pizza!  Good choice.`);
+    rres.render("topping.hbs");
 });
 
 app.get('/index/:type', function(req, res, next) {
     console.log(req.params);
-    res.send(`${req.params.type}!, pizza!  Good choice.`);
+    res.render("index.hbs");
 });
 app.get('/order/:type', function(req, res, next) {
     console.log(req.params);
-    res.send(`${req.params.type}!, pizza!  Good choice.`);
+    res.render("order.hbs");
 });
 
-app.get('/order/:amount/:size', function(req, res, next) {
-  console.log(req.params);
-   res.send(`Your order for ${req.params.amount} ${req.params.size} will be ready in 1 minute.`);
-});
-
-app.get("/test/:someValue", function(req, res, next){
-  res.render("index.hbs", {
-    message: req.params.someValue
-  });
-});
 
 
 
