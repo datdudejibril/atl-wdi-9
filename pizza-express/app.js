@@ -17,6 +17,15 @@ app.get('/topping/:type', function(req, res, next) {
     res.send(`${req.params.type}!, pizza!  Good choice.`);
 });
 
+app.get('/index/:type', function(req, res, next) {
+    console.log(req.params);
+    res.send(`${req.params.type}!, pizza!  Good choice.`);
+});
+app.get('/order/:type', function(req, res, next) {
+    console.log(req.params);
+    res.send(`${req.params.type}!, pizza!  Good choice.`);
+});
+
 app.get('/order/:amount/:size', function(req, res, next) {
   console.log(req.params);
    res.send(`Your order for ${req.params.amount} ${req.params.size} will be ready in 1 minute.`);
